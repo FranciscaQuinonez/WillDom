@@ -1,0 +1,29 @@
+<header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Test</em> Blog</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#">Home</a></li>
+        <li class="has-submenu"><a href="#section2">Entradas</a>
+          <ul class="sub-menu">
+            <li>  <button #addPost type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
+              Blog Local
+            </button></li>
+            <li><button #addPostRem type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalRem">
+              Blog Remoto
+            </button></li>            
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class='content' style="margin-top: 50px !important; height: 100%; width: 100%;">
+   
+    <app-lista-post></app-lista-post>
+    <app-agregar-post-local></app-agregar-post-local>
+    <app-agregar-post-remoto></app-agregar-post-remoto>
+    
+</main>
